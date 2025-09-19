@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Github, Linkedin, ExternalLink } from "lucide-react";
-import professionalPhoto1 from "@/assets/professional-photo-1.png";
 import professionalPhoto2 from "@/assets/professional-photo-2.png";
+import professionalPhoto1 from "@/assets/professional-photo-1.png";
 
 export function HeroSection() {
   const socialLinks = [
@@ -110,7 +110,7 @@ export function HeroSection() {
               {/* Single Main Photo - Better Fitted */}
               <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[480px] overflow-hidden rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300">
                 <img
-                  src={professionalPhoto1}
+                  src={professionalPhoto2}
                   alt="Rohit Kshirsagar - Professional Software Developer"
                   className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                 />

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Code, Zap, Users } from "lucide-react";
-import professionalPhoto2 from "@/assets/professional-photo-2.png";
+import professionalPhoto1 from "@/assets/professional-photo-1.png";
 
 export function AboutSection() {
   const highlights = [
@@ -50,7 +50,7 @@ export function AboutSection() {
                   {/* Image Container */}
                   <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/30 bg-card">
                     <img
-                      src={professionalPhoto2}
+                      src={professionalPhoto1}
                       alt="Rohit Kshirsagar - Professional Software Developer"
                       className="w-full h-[400px] object-cover object-center hover:scale-110 transition-transform duration-700"
                     />
