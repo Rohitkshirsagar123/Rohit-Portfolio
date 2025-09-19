@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Code, Zap, Users } from "lucide-react";
+import professionalPhoto2 from "@/assets/professional-photo-2.png";
 
 export function AboutSection() {
   const highlights = [
@@ -36,9 +37,9 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
             {/* Content */}
-            <div className="animate-slide-in-left">
+            <div className="lg:col-span-2 animate-slide-in-left">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>
@@ -55,6 +56,27 @@ export function AboutSection() {
                 that not only meet technical requirements but also provide exceptional 
                 user experiences.
               </p>
+
+              {/* Highlights Grid */}
+              <div className="grid sm:grid-cols-3 gap-6 mb-8">
+                {highlights.map((highlight, index) => (
+                  <div
+                    key={highlight.title}
+                    className="text-center p-4 rounded-lg bg-card/50 border border-border hover:border-primary/40 transition-all duration-300 hover:scale-105"
+                    style={{ animationDelay: `${index * 0.2}s` }}
+                  >
+                    <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 w-fit mx-auto mb-3">
+                      <highlight.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <h4 className="text-sm font-semibold mb-1 text-foreground">
+                      {highlight.title}
+                    </h4>
+                    <p className="text-xs text-muted-foreground">
+                      {highlight.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
 
               <Button
                 variant="outline"
@@ -73,30 +95,23 @@ export function AboutSection() {
               </Button>
             </div>
 
-            {/* Highlights */}
-            <div className="animate-slide-in-right">
-              <div className="grid gap-6">
-                {highlights.map((highlight, index) => (
-                  <div
-                    key={highlight.title}
-                    className="tech-card group cursor-pointer"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    <div className="flex items-start space-x-4">
-                      <div className="p-3 rounded-lg bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors duration-300">
-                        <highlight.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
-                          {highlight.title}
-                        </h4>
-                        <p className="text-muted-foreground">
-                          {highlight.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+            {/* Professional Photo 2 */}
+            <div className="relative animate-slide-in-right">
+              <div className="relative z-10">
+                <div className="relative mx-auto w-64 h-80 lg:w-72 lg:h-96 overflow-hidden rounded-2xl shadow-tech border-2 border-accent/20 hover:border-accent/40 transition-all duration-300">
+                  <img
+                    src={professionalPhoto2}
+                    alt="Rohit Kshirsagar - Professional Developer at Work"
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                  />
+                  
+                  {/* Professional Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                
+                {/* Decorative Elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 border-2 border-accent/30 rounded-full animate-pulse-slow"></div>
+                <div className="absolute -bottom-6 -left-6 w-14 h-14 bg-primary/10 rounded-full blur-lg animate-pulse-slow delay-700"></div>
               </div>
             </div>
           </div>

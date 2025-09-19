@@ -104,30 +104,25 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Professional Photos */}
+          {/* Professional Photo */}
           <div className="relative animate-slide-in-right">
             <div className="relative z-10">
-              {/* Main Photo */}
-              <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[400px]">
+              {/* Single Main Photo - Better Fitted */}
+              <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[480px] overflow-hidden rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300">
                 <img
                   src={professionalPhoto1}
-                  alt="Rohit Kshirsagar - Professional Photo"
-                  className="w-full h-full object-cover rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300"
+                  alt="Rohit Kshirsagar - Professional Software Developer"
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                 />
                 
-                {/* Floating Second Photo */}
-                <div className="absolute -bottom-6 -right-6 w-32 h-40 lg:w-36 lg:h-44">
-                  <img
-                    src={professionalPhoto2}
-                    alt="Rohit Kshirsagar - Professional Photo 2"
-                    className="w-full h-full object-cover rounded-xl shadow-tech border-2 border-accent/20 hover:border-accent/40 transition-all duration-300 animate-float"
-                  />
-                </div>
+                {/* Gradient Overlay for Professional Look */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
               </div>
               
-              {/* Decorative Elements */}
+              {/* Enhanced Decorative Elements */}
               <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-primary/30 rounded-full animate-pulse-slow"></div>
               <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-accent/20 rounded-full blur-xl animate-pulse-slow delay-500"></div>
+              <div className="absolute top-1/2 -right-8 w-12 h-12 bg-primary/10 rounded-full blur-lg animate-pulse-slow delay-1000"></div>
             </div>
           </div>
         </div>
