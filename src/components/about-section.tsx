@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ExternalLink, Code, Zap, Users } from "lucide-react";
 import professionalPhoto1 from "@/assets/professional-photo-1.png";
 
@@ -47,27 +48,28 @@ export function AboutSection() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
                   <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
                   
-                  {/* Image Container */}
-                  <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/30 bg-card">
-                    <img
-                      src={professionalPhoto1}
-                      alt="Rohit Kshirsagar - Professional Software Developer"
-                      className="w-full h-[400px] object-cover object-center hover:scale-110 transition-transform duration-700"
-                    />
-                    
-                    {/* Enhanced Overlay for Better Light Mode Support */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-accent/10"></div>
-                    
-                    {/* Tech Badge */}
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <div className="bg-background/95 backdrop-blur-md rounded-lg p-3 border-2 border-primary/30 shadow-lg">
-                        <div className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                          <span className="text-sm font-mono text-primary font-semibold">Available for new projects</span>
+                  <div className="relative z-10 rounded-2xl shadow-2xl border-2 border-primary/30 bg-card overflow-hidden">
+                    <AspectRatio ratio={3 / 4} className="relative">
+                      <img
+                        src={professionalPhoto1}
+                        alt="Rohit Kshirsagar - Professional Software Developer"
+                        className="absolute inset-0 w-full h-full object-cover object-top"
+                      />
+                      
+                      {/* Enhanced Overlay for Better Light Mode Support */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-accent/10"></div>
+                      
+                      {/* Tech Badge */}
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <div className="bg-background/95 backdrop-blur-md rounded-lg p-3 border-2 border-primary/30 shadow-lg">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span className="text-sm font-mono text-primary font-semibold">Available for new projects</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </AspectRatio>
                   </div>
                   
                   {/* Floating Tech Icons - Enhanced for Light Mode */}
