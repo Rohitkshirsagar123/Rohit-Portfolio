@@ -37,9 +37,9 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Content */}
-            <div className="lg:col-span-2 animate-slide-in-left">
+            <div className="animate-slide-in-left">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>
@@ -56,27 +56,6 @@ export function AboutSection() {
                 that not only meet technical requirements but also provide exceptional 
                 user experiences.
               </p>
-
-              {/* Highlights Grid */}
-              <div className="grid sm:grid-cols-3 gap-6 mb-8">
-                {highlights.map((highlight, index) => (
-                  <div
-                    key={highlight.title}
-                    className="text-center p-4 rounded-lg bg-card/50 border border-border hover:border-primary/40 transition-all duration-300 hover:scale-105"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 w-fit mx-auto mb-3">
-                      <highlight.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <h4 className="text-sm font-semibold mb-1 text-foreground">
-                      {highlight.title}
-                    </h4>
-                    <p className="text-xs text-muted-foreground">
-                      {highlight.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
 
               <Button
                 variant="outline"
@@ -95,24 +74,77 @@ export function AboutSection() {
               </Button>
             </div>
 
-            {/* Professional Photo 2 */}
+            {/* Enhanced Professional Image with Modern Design */}
             <div className="relative animate-slide-in-right">
-              <div className="relative z-10">
-                <div className="relative mx-auto w-64 h-80 lg:w-72 lg:h-96 overflow-hidden rounded-2xl shadow-tech border-2 border-accent/20 hover:border-accent/40 transition-all duration-300">
-                  <img
-                    src={professionalPhoto2}
-                    alt="Rohit Kshirsagar - Professional Developer at Work"
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="relative">
+                {/* Main Image Container with Modern Frame */}
+                <div className="relative w-full max-w-sm mx-auto">
+                  {/* Background Decorative Elements */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl transform rotate-3 scale-105"></div>
+                  <div className="absolute inset-0 bg-gradient-to-tl from-accent/5 to-primary/5 rounded-3xl transform -rotate-2 scale-110"></div>
                   
-                  {/* Professional Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
+                  {/* Image Container */}
+                  <div className="relative z-10 overflow-hidden rounded-2xl shadow-2xl border border-primary/20 bg-card">
+                    <img
+                      src={professionalPhoto2}
+                      alt="Rohit Kshirsagar - Professional Software Developer"
+                      className="w-full h-[400px] object-cover object-center hover:scale-110 transition-transform duration-700"
+                    />
+                    
+                    {/* Modern Overlay with Tech Theme */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
+                    
+                    {/* Tech Badge */}
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="bg-background/90 backdrop-blur-sm rounded-lg p-3 border border-primary/20">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                          <span className="text-sm font-mono text-primary">Available for new projects</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Floating Tech Icons */}
+                  <div className="absolute -top-6 -right-6 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center border border-primary/20 animate-pulse-slow">
+                    <Code className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="absolute -bottom-4 -left-4 w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center border border-accent/20 animate-pulse-slow delay-1000">
+                    <Zap className="h-5 w-5 text-accent" />
+                  </div>
                 </div>
                 
-                {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 border-2 border-accent/30 rounded-full animate-pulse-slow"></div>
-                <div className="absolute -bottom-6 -left-6 w-14 h-14 bg-primary/10 rounded-full blur-lg animate-pulse-slow delay-700"></div>
+                {/* Animated Background Patterns */}
+                <div className="absolute top-1/4 -left-8 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse-slow"></div>
+                <div className="absolute bottom-1/4 -right-8 w-24 h-24 bg-accent/5 rounded-full blur-2xl animate-pulse-slow delay-500"></div>
               </div>
+            </div>
+          </div>
+
+          {/* Highlights Section - Moved Below */}
+          <div className="mt-20 animate-fade-in">
+            <div className="grid md:grid-cols-3 gap-8">
+              {highlights.map((highlight, index) => (
+                <div
+                  key={highlight.title}
+                  className="tech-card group cursor-pointer"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="p-3 rounded-lg bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors duration-300">
+                      <highlight.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                        {highlight.title}
+                      </h4>
+                      <p className="text-muted-foreground">
+                        {highlight.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
