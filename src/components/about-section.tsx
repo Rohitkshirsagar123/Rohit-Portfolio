@@ -38,7 +38,7 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Enhanced Professional Image with Modern Design - Now on Left */}
             <div className="relative animate-slide-in-left order-2 lg:order-1">
               <div className="relative">
