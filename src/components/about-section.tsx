@@ -48,17 +48,16 @@ export function AboutSection() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
                   <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
                   
-                  <div className="relative z-10 rounded-2xl shadow-2xl border-2 border-primary/30 bg-card overflow-hidden">
+                  <div className="relative z-10 rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 overflow-hidden">
                     <div className="relative w-80 h-96 lg:w-96 lg:h-[480px]">
                       <img
                         src={professionalPhoto1}
                         alt="Rohit Kshirsagar - Professional Software Developer"
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                       />
                       
-                      {/* Enhanced Overlay for Better Light Mode Support */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent"></div>
-                      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-accent/10"></div>
+                      {/* Gradient Overlay for Professional Look */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
                       
                       {/* Tech Badge */}
                       <div className="absolute bottom-4 left-4 right-4">
