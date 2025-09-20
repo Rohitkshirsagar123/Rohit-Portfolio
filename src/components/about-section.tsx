@@ -29,9 +29,7 @@ export function AboutSection() {
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-4 py-2 mb-6 bg-primary/10 rounded-full border border-primary/20">
-              <span className="text-sm font-mono text-primary">
-                &lt;about /&gt;
-              </span>
+              <span className="text-sm font-mono text-primary">&lt;about /&gt;</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               About <span className="gradient-text">ME</span>
@@ -39,69 +37,74 @@ export function AboutSection() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 xl:gap-20 items-center">
-            {/* Enhanced Professional Image with Modern Design - Now on Left */}
-            <div className="relative animate-slide-in-left order-2 lg:order-1">
-              <div className="relative flex justify-center lg:justify-start">
-                {/* Main Image Container with Modern Frame */}
-                <div className="relative w-full max-w-sm lg:max-w-md mx-auto lg:mx-0">
-                  {/* Background Decorative Elements - Better for Light Mode */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
-                  <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
-                  
-                  <div className="relative z-10 rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 overflow-hidden">
-                    <div className="relative w-80 h-96 lg:w-96 lg:h-[480px]">
-                      <img
-                        src={professionalPhoto1}
-                        alt="Rohit Kshirsagar - Professional Software Developer"
-                        className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-                      />
-                      
-                      {/* Gradient Overlay for Professional Look */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
-                      
-                      {/* Tech Badge */}
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <div className="bg-background/95 backdrop-blur-md rounded-lg p-3 border-2 border-primary/30 shadow-lg">
-                          <div className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span className="text-sm font-mono text-primary font-semibold">Available for new projects</span>
-                          </div>
-                        </div>
+            {/* Image + Frames */}
+          <div className="relative animate-slide-in-left order-2 lg:order-1">
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-md mx-auto lg:mx-0
+                md:min-h-[420px] md:max-h-[460px]"> {/* Frame height reduced but flexible */}
+                
+                {/* Rotated Gradient Frames */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-2 sm:rotate-3 scale-[1.05] sm:scale-105"></div>
+                <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-1 sm:-rotate-2 scale-[1.08] sm:scale-110"></div>
+
+                {/* Image Container */}
+                <div className="relative z-10 rounded-2xl shadow-tech border-2 border-primary/20 overflow-hidden h-full">
+                  <AspectRatio ratio={4 / 5} className="w-full h-full">
+                    <img
+                      src={professionalPhoto1}
+                      alt="Rohit Kshirsagar - Professional Software Developer"
+                      className="object-cover object-top w-full h-full hover:scale-105 transition-transform duration-500"
+                    />
+                  </AspectRatio>
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none"></div>
+
+                  {/* Tech Badge */}
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-background/95 backdrop-blur-md rounded-lg p-3 border-2 border-primary/30 shadow-lg">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span className="text-sm font-mono text-primary font-semibold">
+                          Available for new projects
+                        </span>
                       </div>
                     </div>
                   </div>
-                  
-                  {/* Floating Tech Icons - Enhanced for Light Mode */}
-                  <div className="absolute -top-6 -left-6 w-12 h-12 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-primary/40 animate-pulse-slow shadow-lg">
-                    <Code className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-accent/40 animate-pulse-slow delay-1000 shadow-lg">
-                    <Zap className="h-5 w-5 text-accent" />
-                  </div>
-                </div> 
-                
-                {/* Animated Background Patterns - Subtle for Light Mode */}
-                <div className="absolute top-1/4 -right-8 w-32 h-32 bg-primary/8 rounded-full blur-3xl animate-pulse-slow"></div>
-                <div className="absolute bottom-1/4 -left-8 w-24 h-24 bg-accent/8 rounded-full blur-2xl animate-pulse-slow delay-500"></div>
-              </div>
-            </div>
+                </div>
 
-            {/* Content - Now on Right */}
+                {/* Floating Tech Icons */}
+                <div className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 w-10 sm:w-12 h-10 sm:h-12 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-primary/40 animate-pulse-slow shadow-lg">
+                  <Code className="h-5 sm:h-6 w-5 sm:w-6 text-primary" />
+                </div>
+                <div className="absolute -bottom-3 sm:-bottom-4 -right-3 sm:-right-4 w-8 sm:w-10 h-8 sm:h-10 bg-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-accent/40 animate-pulse-slow delay-1000 shadow-lg">
+                  <Zap className="h-4 sm:h-5 w-4 sm:w-5 text-accent" />
+                </div>
+              </div>
+
+              {/* Background Decorative Patterns */}
+              <div className="absolute top-1/4 -right-6 sm:-right-8 w-24 sm:w-32 h-24 sm:h-32 bg-primary/8 rounded-full blur-3xl animate-pulse-slow"></div>
+              <div className="absolute bottom-1/4 -left-6 sm:-left-8 w-16 sm:w-24 h-16 sm:h-24 bg-accent/8 rounded-full blur-2xl animate-pulse-slow delay-500"></div>
+            </div>
+          </div>
+
+
+            {/* Content */}
             <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-xl xl:max-w-2xl mx-auto lg:mx-0 text-center lg:text-left lg:pl-8 xl:pl-12">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>
-              
+
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Passionate Software Engineer with a strong commitment to crafting 
-                elegant, user-friendly interfaces and building robust, scalable 
+                Passionate Software Engineer with a strong commitment to crafting
+                elegant, user-friendly interfaces and building robust, scalable
                 software solutions to meet diverse business needs.
               </p>
 
               <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-                With extensive experience in modern web technologies and software 
-                development practices, I focus on delivering high-quality solutions 
-                that not only meet technical requirements but also provide exceptional 
+                With extensive experience in modern web technologies and software
+                development practices, I focus on delivering high-quality solutions
+                that not only meet technical requirements but also provide exceptional
                 user experiences.
               </p>
 
@@ -123,7 +126,7 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* Highlights Section - Moved Below */}
+          {/* Highlights Section */}
           <div className="mt-20 animate-fade-in">
             <div className="grid md:grid-cols-3 gap-8">
               {highlights.map((highlight, index) => (
@@ -140,9 +143,7 @@ export function AboutSection() {
                       <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                         {highlight.title}
                       </h4>
-                      <p className="text-muted-foreground">
-                        {highlight.description}
-                      </p>
+                      <p className="text-muted-foreground">{highlight.description}</p>
                     </div>
                   </div>
                 </div>

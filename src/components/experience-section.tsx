@@ -10,6 +10,15 @@ export function ExperienceSection() {
       description: "Leading software development initiatives and implementing scalable solutions for enterprise applications.",
       technologies: ["Python", "React", "SQL", "Flask"],
     },
+   {
+      company: "Freelance Projects",
+      position: "Web Developer / Software Engineer",
+      period: "OCT 2023 - APR 2024",
+      type: "Freelance",
+      description: "Focused on web development and software solutions, enhancing skills and delivering practical, efficient projects during this period.",
+      technologies: ["React", "JavaScript", "HTML/CSS", "Charts.js", "REST APIs"],
+    },
+
     {
       company: "PIBYTHREE",
       position: "ASSOCIATE SOFTWARE ENGINEER",
