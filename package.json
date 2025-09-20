@@ -1,13 +1,15 @@
 {
-  "name": "https://Rohitkshirsagar123.github.io/Rohit-Portfolio",
+  "name": "rohitportfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Rohitkshirsagar123.github.io/Rohit-Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "predeploy": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
