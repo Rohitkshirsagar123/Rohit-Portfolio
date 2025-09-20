@@ -49,11 +49,11 @@ export function AboutSection() {
                   <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
                   
                   <div className="relative z-10 rounded-2xl shadow-2xl border-2 border-primary/30 bg-card overflow-hidden">
-                    <AspectRatio ratio={3 / 4} className="relative">
+                    <div className="relative w-80 h-96 lg:w-96 lg:h-[480px]">
                       <img
                         src={professionalPhoto1}
                         alt="Rohit Kshirsagar - Professional Software Developer"
-                        className="absolute inset-0 w-full h-full object-cover object-top"
+                        className="w-full h-full object-cover object-top"
                       />
                       
                       {/* Enhanced Overlay for Better Light Mode Support */}
@@ -69,7 +69,7 @@ export function AboutSection() {
                           </div>
                         </div>
                       </div>
-                    </AspectRatio>
+                    </div>
                   </div>
                   
                   {/* Floating Tech Icons - Enhanced for Light Mode */}
