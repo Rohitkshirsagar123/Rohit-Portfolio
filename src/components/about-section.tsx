@@ -107,9 +107,9 @@ export function AboutSection() {
               </p>
 
               <Button
-                variant="outline"
+                variant="outline-primary"
                 size="lg"
-                className="border-primary/40 hover:border-primary hover:bg-primary/10 font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+                className="font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
                 asChild
               >
                 <a
