@@ -38,12 +38,12 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-20 items-center">
             {/* Enhanced Professional Image with Modern Design - Now on Left */}
             <div className="relative animate-slide-in-left order-2 lg:order-1">
-              <div className="relative">
+              <div className="relative flex justify-center lg:justify-start">
                 {/* Main Image Container with Modern Frame */}
-                <div className="relative w-full max-w-md mx-auto lg:mx-0">
+                <div className="relative w-full max-w-sm lg:max-w-md mx-auto lg:mx-0">
                   {/* Background Decorative Elements - Better for Light Mode */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
                   <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
@@ -88,7 +88,7 @@ export function AboutSection() {
             </div>
 
             {/* Content - Now on Right */}
-            <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+            <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-xl xl:max-w-2xl mx-auto lg:mx-0 text-center lg:text-left lg:pl-8 xl:pl-12">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>
