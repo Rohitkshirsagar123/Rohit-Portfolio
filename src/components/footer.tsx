@@ -15,9 +15,9 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-            <span>© 2024 Rohit Kshirsagar. Made with</span>
-            <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
-            <span>using React & TypeScript</span>
+             <span>© {new Date().getFullYear()} Rohit Kshirsagar.</span>
+            {/* <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
+            <span>using React & TypeScript</span> */}
           </div>
         </div>
       </div>

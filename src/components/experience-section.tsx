@@ -39,7 +39,7 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-full lg:max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-4 py-2 mb-6 bg-primary/10 rounded-full border border-primary/20">
@@ -77,7 +77,7 @@ export function ExperienceSection() {
 
                   {/* Content */}
                   <div
-                    className={`w-full md:w-5/12 ml-12 md:ml-0 ${
+                    className={`w-full md:w-5/12  md:pl-0 ${
                       index % 2 === 0 ? 'md:mr-auto md:text-right' : 'md:ml-auto md:text-left'
                     }`}
                   >

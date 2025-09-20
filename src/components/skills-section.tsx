@@ -5,12 +5,14 @@ export function SkillsSection() {
     { name: "HTML", level: 80, category: "Frontend" },
     { name: "CSS", level: 80, category: "Frontend" },
     { name: "JavaScript", level: 75, category: "Programming" },
-    { name: "React", level: 60, category: "Frontend" },
+    { name: "React", level: 75, category: "Frontend" },
     { name: "Python", level: 70, category: "Programming" },
     { name: "C++", level: 70, category: "Programming" },
     { name: "C", level: 70, category: "Programming" },
     { name: "Flask", level: 80, category: "Backend" },
+     { name: "SpringBoot", level: 55, category: "Backend" },
     { name: "SQL", level: 75, category: "Database" },
+     { name: "Oracle", level: 75, category: "Database" },
   ];
 
   const categories = Array.from(new Set(skills.map(skill => skill.category)));

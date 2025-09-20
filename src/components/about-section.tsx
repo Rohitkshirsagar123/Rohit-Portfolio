@@ -38,7 +38,7 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-40 items-start">
             {/* Enhanced Professional Image with Modern Design - Now on Left */}
             <div className="relative animate-slide-in-left order-2 lg:order-1">
               <div className="relative">
@@ -79,7 +79,7 @@ export function AboutSection() {
                   <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-accent/40 animate-pulse-slow delay-1000 shadow-lg">
                     <Zap className="h-5 w-5 text-accent" />
                   </div>
-                </div>
+                </div> 
                 
                 {/* Animated Background Patterns - Subtle for Light Mode */}
                 <div className="absolute top-1/4 -right-8 w-32 h-32 bg-primary/8 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -88,7 +88,7 @@ export function AboutSection() {
             </div>
 
             {/* Content - Now on Right */}
-            <div className="animate-slide-in-right order-1 lg:order-2">
+            <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-xl  mx-auto lg:mx-0 lg:pl-8 text-center lg:text-left ">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>

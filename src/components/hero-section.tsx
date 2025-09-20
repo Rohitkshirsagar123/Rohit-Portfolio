@@ -36,7 +36,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left animate-fade-in">
+          <div className="text-center lg:text-left animate-fade-in  max-w-xl mx-auto lg:mx-0">
             <div className="inline-block px-4 py-2 mb-6 bg-primary/10 rounded-full border border-primary/20">
               <span className="text-sm font-mono text-primary">
                 &lt;developer&gt;
@@ -105,7 +105,7 @@ export function HeroSection() {
           </div>
 
           {/* Professional Photo */}
-          <div className="relative animate-slide-in-right">
+          <div className="relative animate-slide-in-right flex justify-center lg:justify-end">
             <div className="relative z-10">
               {/* Single Main Photo - Better Fitted */}
               <div className="relative mx-auto w-80 h-96 lg:w-96 lg:h-[480px] overflow-hidden rounded-2xl shadow-tech border-2 border-primary/20 hover:border-primary/40 transition-all duration-300">
