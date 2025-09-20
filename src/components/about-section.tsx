@@ -53,7 +53,7 @@ export function AboutSection() {
                       <img
                         src={professionalPhoto1}
                         alt="Rohit Kshirsagar - Professional Software Developer"
-                        className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                       />
                       
                       {/* Gradient Overlay for Professional Look */}
