@@ -25,7 +25,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block px-4 py-2 mb-6 bg-primary/10 rounded-full border border-primary/20">
@@ -38,12 +38,12 @@ export function AboutSection() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-40 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Enhanced Professional Image with Modern Design - Now on Left */}
             <div className="relative animate-slide-in-left order-2 lg:order-1">
               <div className="relative">
                 {/* Main Image Container with Modern Frame */}
-                <div className="relative w-full max-w-sm mx-auto">
+                <div className="relative w-full max-w-md mx-auto lg:mx-0">
                   {/* Background Decorative Elements - Better for Light Mode */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl transform rotate-3 scale-105"></div>
                   <div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-primary/15 rounded-3xl transform -rotate-2 scale-110"></div>
@@ -88,7 +88,7 @@ export function AboutSection() {
             </div>
 
             {/* Content - Now on Right */}
-            <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-xl  mx-auto lg:mx-0 lg:pl-8 text-center lg:text-left ">
+            <div className="animate-slide-in-right order-1 lg:order-2 w-full max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-primary">
                 Software Engineer / Web Developer
               </h3>
